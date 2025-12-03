@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="CircleCollision.vcxproj" Id="466a698e-810b-41c0-b65c-2703d173dff7" />
-</Solution>

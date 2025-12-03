@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <vector>
 #include <cstddef>
@@ -12,9 +12,10 @@ public:
     std::size_t x;
     std::size_t y;
 
-	Position(std::size_t x, std::size_t y)
-		: x{x}, y{y}
-	{}
+    Position(std::size_t x, std::size_t y)
+        : x{ x }, y{ y }
+    {
+    }
 };
 
 struct Size
@@ -24,8 +25,9 @@ public:
     std::size_t height;
 
     Size(std::size_t w, std::size_t h)
-        : width{w}, height{h}
-    {}
+        : width{ w }, height{ h }
+    {
+    }
 };
 
 //-------------------------------------------
@@ -41,10 +43,10 @@ private:
 
 public:
     CircleMatrix(Position pos, Size size, float radius)
-		: position{ pos }, size(size), radius2{ radius * radius }, data(size.width * size.height, 0)
+        : position{ pos }, size(size), radius2{ radius * radius }, data(size.width* size.height, 0)
     {
         Generate();
-    }	
+    }
 
     inline std::size_t GetWidth() const noexcept { return size.width; }
 
@@ -56,5 +58,5 @@ public:
     inline const std::vector<std::uint8_t>& GetRawData() const noexcept { return data; }
 
 private:
-    void Generate();    
+    void Generate();
 };
