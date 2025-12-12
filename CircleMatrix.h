@@ -43,7 +43,7 @@ private:
 
 public:
     CircleMatrix(Position pos, Size size, float radius)
-        : position{ pos }, size(size), radius2{ radius * radius }, data(size.width* size.height, 0)
+        : position(pos), size(size), radius2(radius * radius), data(size.width * size.height, 0)
     {
         Generate();
     }

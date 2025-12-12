@@ -2,6 +2,8 @@
 
 void CircleMatrix::Generate()
 {
+    data.reserve(size.width * size.height);
+
     for (std::size_t y = 0; y < size.height; ++y)
     {
         for (std::size_t x = 0; x < size.width; ++x)
